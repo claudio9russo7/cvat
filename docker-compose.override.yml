@@ -1,0 +1,23 @@
+services:
+  cvat_server:
+    volumes:
+      - cvat_share:/home/django/share:ro
+  cvat_worker_import:
+    volumes:
+      - cvat_share:/home/django/share:ro
+  cvat_db:
+    volumes:
+      - cvat_annotation:/var/lib/postgresql/data
+
+volumes:
+  cvat_share:
+    driver_opts:
+      type: none
+      device: /home/claudio.russo/rawimages
+      o: bind
+  cvat_annotation:
+    driver_opts:
+      type: none
+      device: /home/claudio.russo/annotatedimages
+      o: bind
+  
