@@ -265,6 +265,7 @@ services:
 
   cvat_grafana:
     image: grafana/grafana-oss:9.3.6
+    restart: always
     container_name: cvat_grafana
     environment:
       - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
