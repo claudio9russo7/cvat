@@ -13,11 +13,11 @@ volumes:
   cvat_share:
     driver_opts:
       type: none
-      device: /home/claudio.russo/rawimages
+      device: /media/agritech/docker-persistencies/logic-tier/cvat/rawimages
       o: bind
   cvat_annotation:
     driver_opts:
       type: none
-      device: /home/claudio.russo/annotatedimages
+      device: /media/agritech/docker-persistencies/logic-tier/cvat/annotatedimages
       o: bind
   
