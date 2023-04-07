@@ -18,6 +18,6 @@ volumes:
   cvat_annotation:
     driver_opts:
       type: none
-      device: /media/agritech/docker-persistencies/logic-tier/cvat/annotatedimages
+      device: /media/agritech/docker-persistencies/logic-tier/cvat/annotated_db
       o: bind
   
