@@ -192,6 +192,7 @@ services:
       - '--providers.docker.network=cvat'
       - '--entryPoints.web.address=:8080'
       - '--providers.file.directory=/etc/traefik/rules'
+      - '--entryPoints.web.forwardedHeaders.trustedIPs=192.168.20.30/32'
     # Uncomment to get Traefik dashboard
     #   - "--entryPoints.dashboard.address=:8090"
     #   - "--api.dashboard=true"
